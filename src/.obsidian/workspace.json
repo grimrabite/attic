@@ -1,0 +1,181 @@
+{
+  "main": {
+    "id": "426522d551d469cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "9e3d213a944e101c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "24fc625bb045c84d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_includes/scene-template.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "scene-template"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "699447e9331becef",
+    "type": "split",
+    "children": [
+      {
+        "id": "bfcf1b58d2af82a3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1fa3ad1577b0b032",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "513a24fb78398194",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "d29250b1434a1461",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4892da31591fc1cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "704cafba9db35e54",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4f60ed232a4b50f2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_includes/scene-template.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for scene-template"
+            }
+          },
+          {
+            "id": "0d8f4e1f27510e2e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_includes/scene-template.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from scene-template"
+            }
+          },
+          {
+            "id": "f114c4ae4fd6a52d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "3d031247669d3d35",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_includes/scene-template.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of scene-template"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "24fc625bb045c84d",
+  "lastOpenFiles": [
+    "scenes/index.md",
+    "_includes/scene-template.md",
+    "characters",
+    "New folder",
+    "scenes/milk-and-dust.md",
+    "scenes/New Text Document.txt",
+    "scenes/Milk and Dust.md"
+  ]
+}
