@@ -2,23 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{ title }}</title>
-  <style>
-    body {
-      font-family: Georgia, serif;
-      background: #f8f5f1;
-      color: #2a1e1e;
-      max-width: 700px;
-      margin: 3em auto;
-      padding: 1em;
-      line-height: 1.6;
-    }
-    a { color: #8b5c4a; text-decoration: underline; }
-  </style>
+  <title>{{ title or "Attic" }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <!-- Google Fonts for handwritten/serif combo -->
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Merriweather&display=swap" rel="stylesheet">
 </head>
 <body>
+  <nav class="site-nav">
+    <a href="/">Home</a>
+    <a href="/scenes/">Scenes</a>
+    <a href="/sketches/">Sketches</a>
+    <a href="/attic/">Attic</a>
+    <a href="/tags/">Tags</a>
+    <a href="#" id="randomNavBtn">Random</a>
+  </nav>
   <main>
     {{ content | safe }}
   </main>
+  <script>
+    // Random button JS—injects all post URLs at build time
+    const randomPages = [
+      {% for post in collections.all %}
+        "{{ post.url }}"{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ];
+    function randomNav() {
+      const pick = randomPages[Math.floor(Math.random() * randomPages.length)];
+      window.location.href = pick;
+    }
+    document.getElementById('randomNavBtn')?.addEventListener('click', function(e) {
+      e.preventDefault(); randomNav();
+    });
+    document.getElementById('randomBtn')?.addEventListener('click', function(e) {
+      e.preventDefault(); randomNav();
+    });
+  </script>
 </body>
 </html>
