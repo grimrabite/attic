@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_includes/scene-template.md",
+                "file": "tags/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "scene-template"
+              "title": "index"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_includes/scene-template.md",
+                "file": "tags/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for scene-template"
+              "title": "Backlinks for index"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_includes/scene-template.md",
+                "file": "tags/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from scene-template"
+              "title": "Outgoing links from index"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_includes/scene-template.md",
+                "file": "tags/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of scene-template"
+              "title": "Outline of index"
             }
           }
         ]
@@ -170,11 +170,16 @@
   },
   "active": "24fc625bb045c84d",
   "lastOpenFiles": [
+    "tags/tag.njk",
+    "sketches/2025-06-06-this-is-a-test-file.md",
+    "tags/index.md",
+    "tags",
+    "scenes/milk-and-dust.md",
+    "assets/images/6c010d6f-01ad-4c23-a40a-3ff0be06ee76.png",
     "scenes/index.md",
     "_includes/scene-template.md",
     "characters",
     "New folder",
-    "scenes/milk-and-dust.md",
     "scenes/New Text Document.txt",
     "scenes/Milk and Dust.md"
   ]
