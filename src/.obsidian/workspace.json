@@ -11,12 +11,14 @@
             "id": "24fc625bb045c84d",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "assets/images/6c010d6f-01ad-4c23-a40a-3ff0be06ee76.png"
+                "file": "sketches/index.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "6c010d6f-01ad-4c23-a40a-3ff0be06ee76"
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ]
@@ -92,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "assets/images/6c010d6f-01ad-4c23-a40a-3ff0be06ee76.png",
+                "file": "sketches/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 6c010d6f-01ad-4c23-a40a-3ff0be06ee76"
+              "title": "Backlinks for index"
             }
           },
           {
@@ -111,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "assets/images/6c010d6f-01ad-4c23-a40a-3ff0be06ee76.png",
+                "file": "sketches/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 6c010d6f-01ad-4c23-a40a-3ff0be06ee76"
+              "title": "Outgoing links from index"
             }
           },
           {
@@ -140,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "assets/images/6c010d6f-01ad-4c23-a40a-3ff0be06ee76.png",
+                "file": "sketches/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 6c010d6f-01ad-4c23-a40a-3ff0be06ee76"
+              "title": "Outline of index"
             }
           }
         ]
@@ -168,15 +170,15 @@
   },
   "active": "24fc625bb045c84d",
   "lastOpenFiles": [
+    "tags/index.md",
+    "sketches/index.md",
+    "scenes/index.md",
+    "characters/index.md",
+    "attic/index.md",
+    "assets/images/6c010d6f-01ad-4c23-a40a-3ff0be06ee76.png",
     "assets/images/cardboard-flat.png",
     "assets/images/billie-holiday.png",
-    "assets/images/6c010d6f-01ad-4c23-a40a-3ff0be06ee76.png",
-    "attic/index.md",
-    "characters/index.md",
-    "scenes/index.md",
-    "sketches/index.md",
     "sketches/2025-06-06-this-is-a-test-file.md",
-    "tags/index.md",
     "assets/styles.css",
     "assets/styles/styles.css",
     "assets/styles/New Text Document.txt",

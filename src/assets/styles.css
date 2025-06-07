@@ -1,151 +1,70 @@
-:root {
-  --bg: #f7f5e9;
-  --fg: #222;
-  --paper: #fffaf2;
-  --accent: #ffeeb5;
-  --border: #ccb08c;
-  --nav-bg: rgba(255,255,255,0.92);
-  --shadow: 0 4px 20px rgba(140,100,60,0.07);
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #10100b;
-    --fg: #ece2c4;
-    --paper: #28221c;
-    --accent: #494037;
-    --border: #665241;
-    --nav-bg: rgba(20,20,10,0.92);
-    --shadow: 0 4px 20px rgba(30,20,10,0.13);
-  }
-}
 body {
-  background-color: var(--bg);
+  background-color: #111;
   background-image: url("/assets/images/billie-holiday.png");
-  font-family: 'Merriweather', 'Georgia', serif;
-  color: var(--fg);
+  font-family: 'Inter', 'IBM Plex Sans', 'Georgia', serif;
+  color: #ececec;
   margin: 0;
+  padding: 0;
   min-height: 100vh;
-  transition: background 0.3s, color 0.3s;
+  font-size: 1.05em;
+  letter-spacing: 0.01em;
 }
 
 .site-nav {
-  background: var(--nav-bg);
-  padding: 1.1em 2em 1.1em 2em;
-  font-family: 'Indie Flower', cursive, sans-serif;
-  border-bottom: 2px dashed var(--border);
+  background: rgba(18, 18, 18, 0.92);
+  color: #bababa;
+  padding: 0.9em 2em 0.8em 2em;
+  font-family: inherit;
+  font-size: 1.05em;
+  border-bottom: 1px solid #222;
   display: flex;
-  gap: 2em;
+  gap: 1.3em;
   align-items: center;
-  box-shadow: var(--shadow);
-  font-size: 1.2em;
-  position: sticky;
-  top: 0;
-  z-index: 10;
 }
 
 .site-nav a {
-  color: #7b6443;
+  color: #bababa;
   text-decoration: none;
-  padding: 0.4em 1em;
-  border-radius: 7px;
-  transition: background 0.12s, color 0.12s;
+  transition: color 0.12s;
 }
 
 .site-nav a:hover, .site-nav a:focus {
-  background: var(--accent);
-  color: #a87e36;
+  color: #fff;
 }
 
-.landing {
-  max-width: 480px;
-  margin: 4em auto 2em auto;
-  background: var(--paper);
-  border: 2.5px solid var(--border);
-  border-radius: 14px;
-  box-shadow: var(--shadow);
-  padding: 2.3em 2em 2.2em 2em;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-.landing:before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: -30px; left: -30px;
-  width: 100px; height: 100px;
-  background: url("/assets/images/cardboard-flat.png");
-  opacity: 0.18;
-  pointer-events: none;
-}
-.landing h1 {
-  font-family: 'Indie Flower', cursive, serif;
-  font-size: 2.7em;
-  margin-bottom: 0.2em;
-  color: #634b1c;
-  letter-spacing: -1px;
-}
-.landing-nav {
-  margin-top: 1.2em;
-  font-family: 'Indie Flower', cursive;
-  font-size: 1.18em;
-  color: #8c6f3c;
-}
-.landing-nav a {
-  color: #816235;
-  text-decoration: underline;
-  margin: 0 0.3em;
-  padding: 0.12em 0.25em;
-  border-radius: 3px;
-}
-.landing-nav a:hover {
-  background: var(--accent);
-  color: #b08635;
+.grid-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2em;
+  margin: 2.5em auto 2em auto;
+  max-width: 1100px;
+  width: 95vw;
 }
 
-.btn-main {
-  display: inline-block;
-  margin: 1.8em 0 1.1em 0;
-  background: var(--accent);
-  border: 2px solid #c6a664;
-  border-radius: 7px;
-  font-family: 'Indie Flower', cursive;
-  font-size: 1.3em;
-  padding: 0.6em 2em;
-  color: #855c22;
-  text-decoration: none;
-  box-shadow: 2px 4px 0 #f9d98d;
-  transition: background 0.13s, color 0.11s;
-  position: relative;
-}
-.btn-main:hover {
-  background: #fbe5a4;
-  color: #6a4316;
+.post-card {
+  background: rgba(22, 22, 22, 0.86);
+  border: 1px solid #222;
+  padding: 1.2em 1em 1em 1em;
+  font-size: 1.09em;
+  color: #ececec;
+  transition: background 0.13s, border 0.13s;
 }
 
-main {
-  max-width: 700px;
-  margin: 2em auto;
-  background: var(--paper);
-  border: 2px solid var(--border);
-  border-radius: 10px;
-  box-shadow: var(--shadow);
-  padding: 2.2em 2em;
-  font-size: 1.18em;
-  line-height: 1.73;
-  min-height: 60vh;
+.post-card:hover {
+  background: rgba(40,40,40,0.92);
+  border: 1.5px solid #505050;
 }
-@media (max-width: 700px) {
-  main, .landing {
-    border-radius: 0;
-    box-shadow: none;
-    padding: 1em 0.3em;
-    margin: 1em 0 0 0;
-    width: 97vw;
-  }
-  .site-nav {
-    font-size: 1em;
-    gap: 1em;
-    padding: 0.7em 0.2em;
-  }
+
+.post-card .title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.6em;
+  color: #f6f6f6;
+}
+
+.post-card .meta {
+  font-size: 0.91em;
+  color: #bbbbbb;
+  margin-top: 0.2em;
+  letter-spacing: 0.02em;
 }

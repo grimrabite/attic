@@ -1,20 +1,26 @@
 module.exports = function(eleventyConfig) {
-  // Tag filter: robust, as before
+  // Bulletproof tag filter: only strings, skip "all", "nav", "post"
   eleventyConfig.addFilter("getAllTags", function(collection) {
     const tagSet = new Set();
     collection.getAll().forEach(item => {
       let tags = item.data.tags;
-      if (typeof tags === "string") tags = [tags];
       if (Array.isArray(tags)) {
-        tags
-          .filter(tag => !["all", "nav", "post"].includes(tag))
-          .forEach(tag => tagSet.add(tag));
+        tags.forEach(tag => {
+          if (typeof tag === "string" && !["all", "nav", "post"].includes(tag)) {
+            tagSet.add(tag);
+          }
+        });
+      } else if (typeof tags === "string") {
+        if (!["all", "nav", "post"].includes(tags)) {
+          tagSet.add(tags);
+        }
       }
+      // Ignore other types (numbers, objects, null, etc)
     });
     return [...tagSet];
   });
 
-  // Slugify filter
+  // Slugify filter for tag URLs
   eleventyConfig.addFilter("slug", function(str) {
     return str
       ? str
@@ -25,10 +31,10 @@ module.exports = function(eleventyConfig) {
       : "";
   });
 
-  // Passthrough copy for assets (this is REQUIRED for CSS/images)
+  // Copy everything in /src/assets/ to /assets/ in the output
   eleventyConfig.addPassthroughCopy("src/assets");
 
-  // Custom collections for major sections
+  // Custom collections for your main sections
   eleventyConfig.addCollection("attic", collectionApi =>
     collectionApi.getFilteredByGlob("src/attic/*.md")
   );

@@ -4,26 +4,25 @@ pagination:
   data: collections.all | getAllTags
   size: 1
   alias: tag
-permalink: "{% if tag %}/tags/{{ tag | slug }}/{% else %}/_ignore/{{ random() }}.html{% endif %}"
+permalink: "/tags/{{ tag | slug }}/"
 eleventyComputed:
   tag: tag
 ---
 
 <h1>Tag: {{ tag }}</h1>
 <ul>
-{% for post in posts %}
-  {# Robust tags: always array #}
-  {% set postTags = post.data.tags %}
-  {% if postTags %}
-    {% if postTags is string %}
-      {% set postTagsArr = [postTags] %}
-    {% else %}
-      {% set postTagsArr = postTags %}
+{% for post in collections.all %}
+  {% set tags = post.data.tags %}
+  {% set tagsArr = tags %}
+  {# Cast to array if needed #}
+  {% if tagsArr %}
+    {% if tagsArr is string %}
+      {% set tagsArr = [tagsArr] %}
     {% endif %}
-    {% if tag in postTagsArr %}
+    {% if tag in tagsArr %}
       <li>
         <a href="{{ post.url }}">{{ post.data.title }}</a>
-        {%- if post.date %} — {{ post.date | date("yyyy-MM-dd") }}{% endif %}
+        {% if post.date %} — {{ post.date | date("yyyy-MM-dd") }}{% endif %}
       </li>
     {% endif %}
   {% endif %}
