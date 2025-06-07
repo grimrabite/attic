@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sketches/index.md",
+                "file": "tags/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sketches/index.md",
+                "file": "tags/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "sketches/index.md",
+                "file": "tags/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "sketches/index.md",
+                "file": "tags/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -170,8 +170,13 @@
   },
   "active": "24fc625bb045c84d",
   "lastOpenFiles": [
-    "tags/index.md",
     "sketches/index.md",
+    "sketches/index.njk",
+    "scenes/index.njk",
+    "characters/index.njk",
+    "attic/index.njk",
+    "attic/index.njl",
+    "tags/index.md",
     "scenes/index.md",
     "characters/index.md",
     "attic/index.md",
@@ -184,13 +189,8 @@
     "assets/styles/New Text Document.txt",
     "assets/styles",
     "assets/New folder",
-    "tags/[tag].njk",
-    "tags/tag.njk",
-    "tags",
     "scenes/milk-and-dust.md",
     "_includes/scene-template.md",
-    "characters",
-    "New folder",
     "scenes/Milk and Dust.md"
   ]
 }
