@@ -1,10 +1,10 @@
 ---
 layout: layout.njk
 pagination:
-  data: collections.all
-  size: 100
-  alias: posts
-permalink: "/tags/{{ tag | slug }}/"
+  data: collections.all | getAllTags
+  size: 1
+  alias: tag
+permalink: "{% if tag %}/tags/{{ tag | slug }}/{% else %}/_ignore/{{ random() }}.html{% endif %}"
 eleventyComputed:
   tag: tag
 ---
