@@ -1,18 +1,17 @@
 ---
 layout: layout.njk
 title: "Welcome to the Attic"
+eleventyComputed:
+  eleventyTemplateEngine: njk
 ---
 
-<div class="landing">
-  <h1>The Attic</h1>
-  <p>
-    AI scraps, sketches, fragments and oddments
-  </p>
-  <a href="/scenes/" class="btn-main">Open the Attic</a>
-  <div class="landing-nav">
-    <a href="/sketches/">Sketches</a> |
-    <a href="/attic/">Attic</a> |
-    <a href="/tags/">Tags</a> |
-    <a href="#" id="randomBtn">Random</a>
-  </div>
-</div>
+<h1 class="big-title">The Attic</h1>
+<p class="intro">AI scraps, sketches, fragments and oddments.</p>
+<nav class="main-nav">
+  <a href="/scenes/">Scenes</a>
+  <a href="/sketches/">Sketches</a>
+  <a href="/attic/">Attic</a>
+  <a href="/characters/">Characters</a>
+  <a href="/tags/">Tags</a>
+  <a href="#" id="randomBtn">Random</a>
+</nav>

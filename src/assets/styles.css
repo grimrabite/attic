@@ -1,3 +1,4 @@
+/* Base Layout */
 body {
   background-color: #111;
   background-image: url("/assets/images/billie-holiday.png");
@@ -10,6 +11,7 @@ body {
   letter-spacing: 0.01em;
 }
 
+/* Navigation */
 .site-nav {
   background: rgba(18, 18, 18, 0.92);
   color: #bababa;
@@ -28,10 +30,12 @@ body {
   transition: color 0.12s;
 }
 
-.site-nav a:hover, .site-nav a:focus {
+.site-nav a:hover,
+.site-nav a:focus {
   color: #fff;
 }
 
+/* Post Grid */
 .grid-posts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -41,6 +45,7 @@ body {
   width: 95vw;
 }
 
+/* Individual Post Card */
 .post-card {
   background: rgba(22, 22, 22, 0.86);
   border: 1px solid #222;
@@ -51,7 +56,7 @@ body {
 }
 
 .post-card:hover {
-  background: rgba(40,40,40,0.92);
+  background: rgba(40, 40, 40, 0.92);
   border: 1.5px solid #505050;
 }
 
@@ -68,3 +73,58 @@ body {
   margin-top: 0.2em;
   letter-spacing: 0.02em;
 }
+
+/* Typography for Landing Page */
+
+.big-title {
+  font-size: 3.2rem;
+  margin: 2rem 0 0.5rem;
+  font-weight: 500;
+}
+
+.intro {
+  font-size: 1.2rem;
+  color: #bbb;
+  margin-bottom: 2rem;
+}
+
+/* Main Nav (Landing Page Only) */
+
+.main-nav {
+  font-family: inherit;
+  font-size: 1rem;
+  color: #999;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.main-nav a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  color: #fff;
+}
+
+/* Optional future additions */
+/*
+.random-button {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  background: #222;
+  color: #fff;
+  padding: 0.5em 1em;
+  border: 1px solid #444;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.random-button:hover {
+  background: #444;
+}
+*/
