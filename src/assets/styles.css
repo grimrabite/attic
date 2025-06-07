@@ -20,7 +20,7 @@
 }
 body {
   background-color: var(--bg);
-  background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
+  background-image: url("/assets/images/billie-holiday.png");
   font-family: 'Merriweather', 'Georgia', serif;
   color: var(--fg);
   margin: 0;
@@ -74,7 +74,7 @@ body {
   position: absolute;
   top: -30px; left: -30px;
   width: 100px; height: 100px;
-  background: url('https://www.transparenttextures.com/patterns/cardboard-flat.png');
+  background: url("/assets/images/cardboard-flat.png");
   opacity: 0.18;
   pointer-events: none;
 }

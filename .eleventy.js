@@ -1,5 +1,5 @@
 module.exports = function(eleventyConfig) {
-  // Robust tag getter: always returns array, ignores "all", "nav", "post"
+  // Tag filter: robust, as before
   eleventyConfig.addFilter("getAllTags", function(collection) {
     const tagSet = new Set();
     collection.getAll().forEach(item => {
@@ -14,7 +14,7 @@ module.exports = function(eleventyConfig) {
     return [...tagSet];
   });
 
-  // Slugify filter for tag URLs
+  // Slugify filter
   eleventyConfig.addFilter("slug", function(str) {
     return str
       ? str
@@ -24,6 +24,23 @@ module.exports = function(eleventyConfig) {
           .replace(/[^\w\-]+/g, "")
       : "";
   });
+
+  // Passthrough copy for assets (this is REQUIRED for CSS/images)
+  eleventyConfig.addPassthroughCopy("src/assets");
+
+  // Custom collections for major sections
+  eleventyConfig.addCollection("attic", collectionApi =>
+    collectionApi.getFilteredByGlob("src/attic/*.md")
+  );
+  eleventyConfig.addCollection("scenes", collectionApi =>
+    collectionApi.getFilteredByGlob("src/scenes/*.md")
+  );
+  eleventyConfig.addCollection("sketches", collectionApi =>
+    collectionApi.getFilteredByGlob("src/sketches/*.md")
+  );
+  eleventyConfig.addCollection("characters", collectionApi =>
+    collectionApi.getFilteredByGlob("src/characters/*.md")
+  );
 
   return {
     dir: {
