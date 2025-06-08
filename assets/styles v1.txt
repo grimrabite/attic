@@ -1,0 +1,16 @@
+body {
+  font-family: 'Georgia', serif;
+  background: #ffffff;
+  color: #111111;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+a {
+  color: #000000;
+  text-decoration: underline;
+}
+h1, h2, h3 {
+  font-weight: normal;
+}
