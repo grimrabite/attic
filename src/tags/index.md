@@ -1,14 +1,12 @@
 ---
 layout: layout.njk
-title: "Tags"
-permalink: "/tags/"
+title: Tags
+permalink: /tags/
 ---
 
-<h1>Tags</h1>
+<h1>All Tags</h1>
 <ul>
-{% for tag in collections.all | getAllTags %}
-  {% if tag != "all" and tag != "scene" %}
+  {% for tag in collections.all | getAllTags %}
     <li><a href="/tags/{{ tag | slug }}/">{{ tag }}</a></li>
-  {% endif %}
-{% endfor %}
+  {% endfor %}
 </ul>
